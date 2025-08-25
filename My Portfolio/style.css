@@ -1,0 +1,54 @@
+body{
+    /* padding: auto;
+    margin: 4%;
+    justify-content: center; */
+    background-color: rgb(68, 15, 117);
+}
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    
+}
+.elements{
+    text-align: center;
+}
+.links{
+    text-align:end;
+    padding: 1%;
+    margin: 1%;
+    color: azure;
+    size: 55px;
+}
+.single
+{
+    margin: .75%;
+    color: azure;
+    text-decoration: none;
+    border: 45px;
+    border-color: rgb(16, 16, 130);
+    border-top: 44px;
+}
+h2{
+    color: azure;
+}
+.image{
+    height: 170px;
+
+}
+.og{
+    color: blueviolet;
+    size: 255px;
+    margin: 44px;
+}
+.header{
+    margin-bottom: 5%;
+    background-color: rgb(31, 5, 55);
+    padding: auto;
+    border-style: groove;
+    height: 5%;
+    border-radius: 4%;
+
+}
