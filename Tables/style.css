@@ -1,0 +1,16 @@
+body{
+    background-color: blanchedalmond;
+}
+table, tr, td{
+    border: 3px solid pink;
+    border-radius: 7%;
+}
+tr{
+    margin: 5%;
+    padding: 6%;
+}
+table{
+    height: 60%;
+    size: 44%;
+    width: 20%;
+}
