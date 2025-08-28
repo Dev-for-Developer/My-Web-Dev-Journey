@@ -107,7 +107,7 @@
 }
 .main-img{
     height: 70vh;
-    width: 27vw;
+    width:fit-content;
     object-fit:fill;
     border: 1px solid transparent;
     border-radius: 25px;
