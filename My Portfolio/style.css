@@ -6,35 +6,35 @@ body{
     background-color: rgb(4, 51, 67);
     box-sizing: border-box;
 }
-
-
+html{
+    scroll-behavior: smooth;
+}
 .whole{
     margin: 0;
     width: 100%;
     min-height: 100vh;
-    
     border: .1px solid blue;
     border-color: transparent;
-    
 }
 .first-header{
     border: .1px solid;
     border-color: transparent;
+    display: flex;
     height: 90px;
     position: relative;
     width: 100%;
 }
 .second-header{
-    border: .1px outset rgb(3, 30, 40);
-    width: 100%;
+    border: .1px  rgb(3, 30, 40);
     position: sticky;
     height: 120px;
     padding: 0;
     display: flex;
-    overflow: hidden;
+    flex-wrap: wrap;
+    width: 100vw;
     top: 0;
     background: #073642;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.3); 
 }
 .mdn{
@@ -63,21 +63,15 @@ body{
     
 }
 .links{
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-shrink: 1;
     position: relative;
     height: fit-content;
     top: 90px;
     left: 274px;
     border-color: transparent;
 }
-/* .link:hover{
-    border: .001px groove;
-    border-radius: 12px;
-} */
-.link{
-    border-bottom:2px solid transparent;
-    
-} 
 .link:hover{
     border-bottom-color:#fff;
 }   
@@ -90,25 +84,32 @@ body{
 }
 .first-section{
     position: sticky;
-    display: block;
-    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0 5px -2px rgba(0,0,0,0.5);;
     height:max-content;
-    width: 40%;
-    margin: 20px 70px;
-    padding: auto ;
+    width: 950px;
+    margin: 0px 70px;
+    padding: auto;
+    align-items: center;
     top: 120px;
-    z-index: 2;
-    overflow: hidden;
+    z-index: 1;
+    row-gap: 60px;
 
 }
 .main-links{
     color: white;
-    display: block;
+    display: flex;
     text-decoration: none;
     font-weight: 800;
-    margin: 50px auto;
 }
 .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
     margin: auto 10px;
-    padding: 10px 120px;
+    padding: 10px auto;
 }
