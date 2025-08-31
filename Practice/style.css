@@ -51,9 +51,11 @@
     text-decoration: none !important;
     font-size: 20px;
 }
+
 .li:hover{
     cursor: pointer;
     border-radius: 999px;
+    color: rgb(50, 89, 229);
     background-color: blue;
 }
 .li1{
