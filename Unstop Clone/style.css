@@ -11,8 +11,7 @@ body{
     flex-direction: column;
 }
 .header{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
     height: 5rem;
     min-height: fit-content;
     width: 100%;
@@ -20,8 +19,9 @@ body{
     top: 0;
     z-index: 1;
     border: .2px solid transparent;
-    justify-content: center;
+    /* justify-content: center; */
     background-color: aliceblue;
+    border-bottom: .2px solid rgb(0, 0, 0, .25);
     
 }
 .navbar{
@@ -38,7 +38,38 @@ body{
     align-items: center;
     justify-content: space-around;
     padding-left: 12px;
-    border-bottom: .2px solid rgb(0, 0, 0, .25);
+    
+}
+@media(max-width: 1800px){
+    .header{
+        height: 10rem;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+        padding-left: 0px;
+        /* gap: 5rem; */
+    }
+    .logo-search{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar .links{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-start: 2;
+        grid-template-columns: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+@media(max-width: 1200px){
+    .navbar .links{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 .logo-search{
     display: flex;
@@ -148,18 +179,39 @@ body{
 .main{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     position: relative;
-    min-width: 100%;
-    height: 40rem;
+    width: 100%;
+    height: 160rem;
     border: .2px solid transparent;
 }
 .main-content{
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
     width: 100%;
-    height: 100%;
+    height: 25%;
     border: .2px solid transparent;
+}
+@media(max-width: 1300px){
+    .main-content{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 80rem;
+        gap: 0;
+    }
+    .first-half{
+        max-height: fit-content;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .second-half-temp{
+        min-height: 7em;
+        min-width: fit-content;
+    }
 }
 .first-half{
     display: flex;
@@ -204,6 +256,14 @@ body{
     align-items: center;
     justify-content: center;
 }
+.second-half-contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80%;
+    width: 70%;
+    border: .2px solid transparent;
+    gap: 2em;
+}
 .second-half-temp{
     display: flex;
     flex-direction: column;
@@ -213,25 +273,23 @@ body{
     border-radius: 30px;
     padding-left: 1.4rem;
 }
+.second-half-temp:hover{
+    cursor: pointer;
+}
 .second-half-temp h2{
     font-size: 2em;
     font-weight: 200;
+    opacity: .75;
     letter-spacing: .1em;
     font-family: sans-serif;
 }
+
 .second-half-temp p{
     font-size: 1.2em;
     font-weight: 400;
+    opacity: .75;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: .18em;
-}
-.second-half-contain{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 80%;
-    width: 70%;
-    border: .2px solid transparent;
-    gap: 2em;
 }
 .second-half-temp1{
     background-color: #97f1f9;
@@ -260,5 +318,39 @@ body{
 .second-half-temp6{
     background-color: #f98e8e;
     border-color: #f98e8e;
+}
 
+.second-half-temp1:hover{
+    /* background-color: #38ebfb; */
+    border: 1px solid;
+    border-color: #03e8fd;
+}
+.second-half-temp2:hover{
+    /* background-color: #39fc7d; */
+    border: 1px solid;
+    border-color: #00ff59;
+
+}
+.second-half-temp3:hover{
+    /* background-color: #fb58f8; */
+    border: 1px solid;
+    border-color: #fc04f8;
+
+}
+.second-half-temp4:hover{
+    /* background-color: rgb(254, 254, 98) ; */
+    border: 1px solid;
+    border-color: rgb(254, 254, 0);
+
+}
+.second-half-temp5:hover{
+    /* background-color: rgb(247, 191, 79); */
+    border: 1px solid;
+    border-color: rgb(255, 170, 0);
+
+}
+.second-half-temp6:hover{
+    /* background-color: #f83f3f; */
+    border: 1px solid;
+    border-color: #fc0101;
 }
